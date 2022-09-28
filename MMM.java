@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class array
+class MMM
  {
  public static void main(String[] args) 
 {
