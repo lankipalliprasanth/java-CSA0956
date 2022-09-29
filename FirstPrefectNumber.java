@@ -1,5 +1,5 @@
 import java.util.Scanner;  
-public class PerfectNumber
+public class FirstPerfectNumber
 {  
 public static void main(String args[])    
 {  
