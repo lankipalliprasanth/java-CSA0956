@@ -1,40 +1,34 @@
 import java.util.*;
-class grade
- {
- public static void main(String[] args)
- {
-  try
- {
- Scanner input = new Scanner(System.in);
- float pos = 0,neg = 0,num=0,p=0,n=0;
- while(num!=-1)
- {
- System.out.print("enter the number:- ");
- num = input.nextInt();
- if(num>0)
- {
-    pos++;
-    p=p+num;
-  }
+class grade{
+ public static void main(String[] args){
+ Scanner a=new Scanner(System.in);
+ System.out.println("Enter the marks in python");
+ int py=a.nextInt();
+ System.out.println("Enter the marks in c programming");
+ int c=a.nextInt();
+ System.out.println("Enter the marks in Mathematics");
+ int mat=a.nextInt();
+ System.out.println("Enter the marks in Physics");
+ int phy=a.nextInt();
+ int tot=mat+py+c+phy;
+ Double agre=(tot/(400.0))*100;
+ System.out.println("Total="+tot);
+ System.out.println("Agreegate="+agre);
+ if(agre>75){
+ System.out.println("Distinction");
+ }
+ else if(agre>=60&&agre<75){
+ System.out.println("First Division");
+ }
+ else if(agre>=50&&agre<60){
+ System.out.println("Second Division");
+ }
+ else if(agre>=40&&agre<50){
+ System.out.println("Third Division");
+ }
+ else{
+ System.out.println("Fail");
+ }
  
- else if(num<0)
-{
-   neg++;
-   n=n+num;
-}
  }
- System.out.println("the no.of.negative values are "+neg);
- System.out.println("the no.of.positive values are "+pos);
- System.out.println("the sum of positive values "+p);
- System.out.println("the sum of negative values"+n);
- float p1=p/pos;
- float p2=n/neg;
- System.out.println("avg of positive numbers"+p1);
- System.out.println(" avg of negative numbers"+p2);
- }
-catch(Exception e)
-{
-   System.out.println("Enter a valid number");
-}
-}
 }
